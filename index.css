@@ -4,6 +4,7 @@ body{
     background-size: cover;
     
 }
+/*
 button {
     background-color: #4CAF50;
     color: white;
@@ -16,8 +17,8 @@ button {
 }
 button:hover {
  opacity:1;
-}
-input.topButtons {
+}*/
+.topButtons {
  width: 90px;
  padding: 10px;
  cursor: pointer;
