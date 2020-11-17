@@ -74,7 +74,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" style="margin: auto;">Welcome Back</h5>
+                    <h5 class="modal-title" style="margin: auto;">Welcome Back!</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-left: 0px;">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -98,14 +98,49 @@
                 </div>
                 <div class="modal-footer">
                     <!--<span>Not a member?</span><span><a href="#" data-signin="#exampleModal1" style="margin-right: 145px;">Sign Up</a></span>-->
-                    <label for="re-password" class="w-100 text-center signup-switch">
+                    <label class="w-100 text-center signup-switch">
                         Not a member?
-                        <span data-toggle="modal" data-dismiss="modal" data-target="#exampleModal1" class="a" style="color: blue;">Sign Up</span>
+                        <span data-toggle="modal" data-dismiss="modal" data-target="#exampleModal1" style="color: blue;">Sign Up</span>
                     </label>
                 </div>
             </div>
         </div>
     </div>
-</body>
+    <!-- postButtons-->
+    <span id="postdiv">
+        <!--<button class="post_btn" onclick="open_lists();">&nbsp;All Posts&nbsp;</button>-->
+        <button class="post_btn">&nbsp;All Posts&nbsp;</button>
+        <button class="post_btn" data-toggle="modal" data-target="#createPost">&nbsp;Create Post&nbsp;</button>
+    </span>
+    <div class="modal" id="createPost">
+        <div class="modal-dialog dialog-control">
+            <div class="modal-content content-block">
+                <div class="modal-header block-header">
+                    <h3 class="w-100 text-center">Pen Your Post</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body body-block">
+                    <form>
+                        <div class="form-group">
+                            <label>Title:</label>
+                            <input type="text" class="form-control" id="postTitle" required>
+                        </div>
+                        <div clas="form-group" id="area-box">
+                            <label>Content:</label>
+                            <textarea class="form-control" required id="content" rows="12"></textarea>
+                        </div>
+                    </form>
+                    <br>
+                    <div class="w-100 text-center">
+                        <button type="submit" class="btn btn-success" id="createButton">Create</button>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
 
+</body>
 </html>
