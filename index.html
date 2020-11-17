@@ -24,7 +24,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bgbody">
     <!-- TODO: Include all your code for the header and home page here -->
     <div class="header">
         <button class="topButtons" type="button" data-toggle="modal" data-target="#exampleModal1" id="sign-in-button">Sign Up</button>
@@ -107,9 +107,9 @@
         </div>
     </div>
     <!-- postButtons-->
-    <span id="postdiv">
+    <span id="postButtons">
         <!--<button class="post_btn" onclick="open_lists();">&nbsp;All Posts&nbsp;</button>-->
-        <button class="post_btn">&nbsp;All Posts&nbsp;</button>
+        <button class="post_btn" onclick="allposts()">&nbsp;All Posts&nbsp;</button>
         <button class="post_btn" data-toggle="modal" data-target="#createPost">&nbsp;Create Post&nbsp;</button>
     </span>
     <div class="modal" id="createPost">
@@ -141,6 +141,7 @@
             </div>
         </div>
     </div>
+    <script src="js/index.js"></script>
 
 </body>
 </html>
