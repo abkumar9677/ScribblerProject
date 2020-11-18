@@ -1,3 +1,3 @@
 function allposts(){
-    window.location.href="../ScribblerProject/html/bloglist.html";
+    window.location.href="../html/bloglist.html";
 }
