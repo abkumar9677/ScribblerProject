@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .middleText{
     font-family: 'Marck Script', cursive;
     margin-top: 0;

@@ -105,7 +105,7 @@
                     </div>
                     <div class="modal-footer">
                         <!--<span>Not a member?</span><span><a href="#" data-signin="#exampleModal1" style="margin-right: 145px;">Sign Up</a></span>-->
-                        <label class="w-100 text-center signup-switch">
+                        <label class="w-100 text-center">
                             Not a member?
                             <span data-toggle="modal" data-dismiss="modal" data-target="#exampleModal1"
                                 style="color: blue;">Sign Up</span>
@@ -115,19 +115,21 @@
             </div>
         </div>
     <div>
+
+        <!--postlists starts here-->
         <div class="row">
             <div class="cols">
                 <div class="author col-2 text-center" style="align-items: center;font-weight: 800;">
                     Jimi
                 </div>
                 <div class="posttext">
-                    <span class="fa fa-trash" style="float: right;" data-toggle="modal" data-target="#trashmodal"></span>
+                    <span class="fa fa-trash fa-lg" style="float: right;" data-toggle="modal" data-target="#trashmodal"></span>
                     <h2>Hello there ! This is Post 1.</h2>
-                    <div class="authdet">
+                    <div class="authdet" style="overflow: hidden;">
                         <p>Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix
                             expanded the range and vocabulary of the electric guitar into areas no musicians had</p>
                     </div>
-                    <span class="fa fa-ellipsis-h" style="float: right;"></span>
+                    <span class="fa fa-ellipsis-h" style="float: right;" onclick="dots()"></span>
                 </div>
             </div>
             <div class="cols">
@@ -135,13 +137,13 @@
                     Jimi
                 </div>
                 <div class="posttext">
-                    <span class="fa fa-trash" style="float: right;" data-toggle="modal" data-target="#trashmodal"></span>
+                    <span class="fa fa-trash fa-lg" style="float: right;" data-toggle="modal" data-target="#trashmodal"></span>
                     <h2>Hello there ! This is Post 1.</h2>
-                    <div class="authdet">
+                    <div class="authdet" style="overflow: hidden;">
                         <p>Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix
                             expanded the range and vocabulary of the electric guitar into areas no musicians had</p>
                     </div>
-                    <span class="fa fa-ellipsis-h" style="float: right;"></span>
+                    <span class="fa fa-ellipsis-h" style="float: right;" onclick="dots()"></span>
                 </div>
             </div>
         </div>
@@ -151,13 +153,13 @@
                     Jimi
                 </div>
                 <div class="posttext">
-                    <span class="fa fa-trash" style="float: right;" data-toggle="modal" data-target="#trashmodal"></span>
+                    <span class="fa fa-trash fa-lg" style="float: right;" data-toggle="modal" data-target="#trashmodal"></span>
                     <h2>Hello there ! This is Post 1.</h2>
-                    <div class="authdet">
+                    <div class="authdet" style="overflow: hidden;">
                         <p>Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix
                             expanded the range and vocabulary of the electric guitar into areas no musicians had</p>
                     </div>
-                    <span class="fa fa-ellipsis-h" style="float: right;"></span>
+                    <span class="fa fa-ellipsis-h" style="float: right;" onclick="dots()"></span>
                 </div>
             </div>
             <div class="cols">
@@ -165,13 +167,13 @@
                     Jimi
                 </div>
                 <div class="posttext">
-                    <span class="fa fa-trash" style="float: right;" data-toggle="modal" data-target="#trashmodal"></span>
+                    <span class="fa fa-trash fa-lg" style="float: right;" data-toggle="modal" data-target="#trashmodal"></span>
                     <h2>Hello there ! This is Post 1.</h2>
-                    <div class="authdet">
+                    <div class="authdet" style="overflow: hidden;">
                         <p>Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix
                             expanded the range and vocabulary of the electric guitar into areas no musicians had</p>
                     </div>
-                    <span class="fa fa-ellipsis-h" style="float: right;"></span>
+                    <span class="fa fa-ellipsis-h" style="float: right;" onclick="dots()"></span>
                 </div>
             </div>
         </div>
@@ -181,13 +183,13 @@
                     Jimi
                 </div>
                 <div class="posttext">
-                    <span class="fa fa-trash" style="float: right;" data-toggle="modal" data-target="#trashmodal"></span>
+                    <span class="fa fa-trash fa-lg" style="float: right;" data-toggle="modal" data-target="#trashmodal"></span>
                     <h2>Hello there ! This is Post 1.</h2>
-                    <div class="authdet">
+                    <div class="authdet" style="overflow: hidden;">
                         <p>Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix
                             expanded the range and vocabulary of the electric guitar into areas no musicians had</p>
                     </div>
-                    <span class="fa fa-ellipsis-h" style="float: right;"></span>
+                    <span class="fa fa-ellipsis-h" style="float: right;" onclick="dots()"></span>
                 </div>
             </div>
         </div>
@@ -199,8 +201,8 @@
                     <div>
                         <p class="text-center">Are you sure you want to delete this post?</p>
                         <div class="text-center">
-                        <button type="button" class="btn btn-danger" id="delete-modal-button-yes">Yes</button>
-                        <button type="button" class="btn btn-success" id="delete-modal-button-no" data-dismiss="modal">No</button>
+                        <button type="button" style="width: 130px;margin-right: 50px;" class="btn btn-danger" id="delete-modal-button-yes">Yes</button>
+                        <button type="button" style="width: 130px;" class="btn btn-success" id="delete-modal-button-no" data-dismiss="modal">No</button>
                         </div>
                     </div>
                 </div>
@@ -210,9 +212,23 @@
     </div>
     
     <script src="../js/bloglist.js"></script>
-    </body>
     
-    </html>
+
+
+    <!-- <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-3 text-center" style="justify-content: center;display: flex;background-color: aquamarine;">
+                <span class="card-img">Jimi</span>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
 
 </body>
 </html>
