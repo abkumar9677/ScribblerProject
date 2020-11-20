@@ -5,12 +5,14 @@ function myFunction() {
     if (btnval == "editSave") {
         btnval = "saveEdit";
         x.contentEditable = "true";
+        
         document.getElementById('buttonText').innerHTML = "Save";
         document.getElementById('buttonSymbol').setAttribute('class', 'fa fa-save');
     }
     else if (btnval == "saveEdit") {
         btnval = "editSave";
         x.contentEditable = "false";
+        
         document.getElementById('buttonText').innerHTML = "Edit";
         document.getElementById('buttonSymbol').setAttribute('class', 'fa fa-edit');
     }
